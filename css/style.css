@@ -1,0 +1,163 @@
+:root{
+    font-family: sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    padding: 15px 25px;
+    background-color: white;
+    box-shadow: 0px 0px 10px lightgray;
+    z-index: 999;
+}
+header >div > img {
+    max-width:30px ;
+    width: 100%;
+}
+article {
+    position: relative;
+    background-image: url(https://cdn.pixabay.com/photo/2021/01/27/08/42/valentine-5954177_1280.jpg);
+    background-size: cover;
+    background-position: center center;
+    height:50vh;
+    background-attachment:fixed;
+
+}
+article::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+}
+article > div{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+article > div >p{
+    font-size: 2em;
+    font-weight: bold;
+}
+.text{
+    margin: auto auto;
+    max-width:1024px ;
+    width: auto;
+    padding: 25px 15px;
+    display: flex;
+    z-index: 0;
+    line-height: 1.2;
+}
+
+.text div:nth-child(1){
+    box-shadow: 0px 0px 10px lightgray;
+    max-width: 66%;
+    width: 100%;
+    border-radius: 10px;
+    margin-right: 15px;
+    padding: 15px;
+
+}
+aside{
+    box-shadow: 0px 0px 10px lightgray;
+    border-radius: 10px;
+    top: 65px;
+    position: sticky;
+    overflow: hidden;
+    align-self: start; 
+    position:-webkit-sticky;
+}
+
+ aside::before{
+    content: "Навигационная панель";
+    color: red;
+    display: none;
+    max-width: auto;
+    width: 0%;
+    text-align: center;
+    font-size: 24px;
+    background-color:#d2a3c7;
+    border-radius: 10px;
+
+}
+ aside:hover::before{
+    width: 100%;
+    display: inline-block;
+}
+aside ul li{
+    margin: 10px auto;
+    font-size: 1.4em;
+    margin-left: 5px;
+
+}
+a{
+    text-decoration: none;
+    color:red;
+}
+a:visited{
+    color: lightpink;
+}
+a:active{
+    color: pink;
+    opacity: 0.5;
+}
+aside>ul>li>a::after{
+    content: "";
+    display: block;
+    border-bottom:3px solid lightgrey;
+    border-radius: 10px;
+    height: 2px;
+    margin:0px auto 3px auto;
+    width: 0%;
+    transition: 0.2s linear;
+}
+aside>ul>li>a:hover::after{
+    width: 100%;
+}
+.text>div > h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0px 0px 10px 0px ;
+}
+blockquote >q{
+    font-style: italic;
+    font-weight: lighter;
+}
+#first-text h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+blockquote {
+    border-left: 5px solid lightpink;
+    padding-left: 7px;
+    margin-bottom: 10px;
+}
+#first-text, #first-text p ,#secont-text , #secont-text p ,#third-text , #third-text p{
+    border: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+
+}
+#first-text figure>img , #secont-text figure>img, #third-text figure>img{
+    display: block;
+    margin-left: auto;
+    margin-right:auto ;
+    max-width: 450px;
+    width: 100%;
+}
+#first-text figcaption, #secont-text figcaption , #third-text figcaption{
+    text-align: center;
+    color: gray;
+    font-style: italic;
+    padding: 10px 0px;
+}
+/* 
+TODO гриша иди спать 
+*/
